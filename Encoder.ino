@@ -13,8 +13,8 @@ String Motor_yon_1_str;
 String Motor_hiz_1_str;
   
 Motor_yon_1_str = String(Motor_yon_1);
-Motor_hiz_1_str = String(Motor1_hiz_1);
-if ( Motor1_hiz <100){
+Motor_hiz_1_str = String(Motor_hiz_1);
+if ( Motor_hiz_1 <100){
    Motor_hiz_1_str = "0" + String(Motor_hiz_1);
 }
 else if (Motor_hiz_1 <10){
@@ -29,7 +29,7 @@ String Motor_hiz_2_str;
   
 Motor_yon_2_str = String(Motor_yon_2);
 Motor_hiz_2_str = String(Motor_hiz_2);
-if (Motor2_hiz <100){
+if (Motor_hiz_2 <100){
    Motor_hiz_2_str = "0" +String( Motor_hiz_2);
 }
 else if (Motor_hiz_2 <10){
