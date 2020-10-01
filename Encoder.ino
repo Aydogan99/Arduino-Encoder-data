@@ -14,6 +14,13 @@ String Motor_hiz_1_str;
   
 Motor_yon_1_str = String(Motor_yon_1);
 Motor_hiz_1_str = String(Motor_hiz_1);
+if(Motor_yon_1_str == "0" ){
+  Motor_yon_1_str = "-";
+}
+else{
+  Motor_yon_1_str = "";
+}
+  
 if ( Motor_hiz_1 <100){
    Motor_hiz_1_str = "0" + String(Motor_hiz_1);
 }
@@ -29,6 +36,14 @@ String Motor_hiz_2_str;
   
 Motor_yon_2_str = String(Motor_yon_2);
 Motor_hiz_2_str = String(Motor_hiz_2);
+
+if(Motor_yon_2_str == "0" ){
+  Motor_yon_2_str = "-";
+}
+else{
+  Motor_yon_2_str = "";
+}
+   
 if (Motor_hiz_2 <100){
    Motor_hiz_2_str = "0" +String( Motor_hiz_2);
 }
@@ -45,6 +60,14 @@ String Motor_hiz_3_str;
   
 Motor_yon_3_str = String(Motor_yon_3);
 Motor_hiz_3_str = String(Motor_hiz_3);
+  
+if(Motor_yon_3_str == "0" ){
+  Motor_yon_3_str = "-";
+}
+else{
+  Motor_yon_3_str = "";
+}
+    
 if (Motor_hiz_3 <100){
    Motor_hiz_3_str = "0" + String(Motor_hiz_3);
 }
@@ -60,6 +83,14 @@ String Motor_hiz_4_str;
 
 Motor_yon_4_str = String(Motor_yon_4);
 Motor_hiz_4_str = String(Motor_hiz_4);
+  
+if(Motor_yon_4_str == "0" ){
+  Motor_yon_4_str = "-";
+}
+else{
+  Motor_yon_4_str = "";
+}
+    
 if (Motor_hiz_4 <100){
    Motor_hiz_4_str = "0" + String(Motor_hiz_4);
 }
