@@ -17,7 +17,7 @@ Motor_hiz_1_str = String(Motor_hiz_1);
 if ( Motor_hiz_1 <100){
    Motor_hiz_1_str = "0" + String(Motor_hiz_1);
 }
-else if (Motor_hiz_1 <10){
+if (Motor_hiz_1 <10){
     Motor_hiz_1_str = "00" +String( Motor_hiz_1);
 }
 
@@ -32,7 +32,7 @@ Motor_hiz_2_str = String(Motor_hiz_2);
 if (Motor_hiz_2 <100){
    Motor_hiz_2_str = "0" +String( Motor_hiz_2);
 }
-else if (Motor_hiz_2 <10){
+if (Motor_hiz_2 <10){
    Motor_hiz_2_str = "00" +String( Motor_hiz_2);
 }
 
@@ -48,7 +48,7 @@ Motor_hiz_3_str = String(Motor_hiz_3);
 if (Motor_hiz_3 <100){
    Motor_hiz_3_str = "0" + String(Motor_hiz_3);
 }
-else if (Motor_hiz_3 <10){
+if (Motor_hiz_3 <10){
    Motor_hiz_3_str = "00" +String(Motor_hiz_3);
 }
 
@@ -63,7 +63,7 @@ Motor_hiz_4_str = String(Motor_hiz_4);
 if (Motor_hiz_4 <100){
    Motor_hiz_4_str = "0" + String(Motor_hiz_4);
 }
-else if (Motor_hiz_4 <10){
+if (Motor_hiz_4 <10){
    Motor_hiz_4_str = "00" +String(Motor_hiz_4);
 }
 
