@@ -7,68 +7,68 @@ Serial.begin(9600);
 void loop()
 {
 //Motor 1
-int Motor1_yon = random(0,2);
-int Motor1_hiz = random(1,255);
-String Motor1_yon_str;
-String Motor1_hiz_str;
+int Motor_yon_1 = random(0,2);
+int Motor_hiz_1 = random(1,255);
+String Motor_yon_1_str;
+String Motor_hiz_1_str;
   
-Motor1_yon_str = String(Motor1_yon);
-Motor1_hiz_str = String(Motor1_hiz);
+Motor_yon_1_str = String(Motor_yon_1);
+Motor_hiz_1_str = String(Motor1_hiz_1);
 if ( Motor1_hiz <100){
-   Motor1_hiz_str = "0" + String(Motor1_hiz);
+   Motor_hiz_1_str = "0" + String(Motor_hiz_1);
 }
-else if (Motor1_hiz <10){
-    Motor1_hiz_str = "00" +String( Motor1_hiz);
+else if (Motor_hiz_1 <10){
+    Motor_hiz_1_str = "00" +String( Motor_hiz_1);
 }
 
 //Motor 2
-int Motor2_yon = random(0,2);
-int Motor2_hiz = random(1,255);
-String Motor2_yon_str;
-String Motor2_hiz_str;
+int Motor_yon_2 = random(0,2);
+int Motor_hiz_2 = random(1,255);
+String Motor_yon_2_str;
+String Motor_hiz_2_str;
   
-Motor2_yon_str = String(Motor2_yon);
-Motor2_hiz_str = String(Motor2_hiz);
+Motor_yon_2_str = String(Motor_yon_2);
+Motor_hiz_2_str = String(Motor_hiz_2);
 if (Motor2_hiz <100){
-   Motor2_hiz_str = "0" +String( Motor2_hiz);
+   Motor_hiz_2_str = "0" +String( Motor_hiz_2);
 }
-else if (Motor2_hiz <10){
-   Motor2_hiz_str = "00" +String( Motor2_hiz);
+else if (Motor_hiz_2 <10){
+   Motor_hiz_2_str = "00" +String( Motor_hiz_2);
 }
 
 
 //Motor 3
-int Motor3_yon = random(0,2);
-int Motor3_hiz = random(1,255);  
-String Motor3_yon_str;
-String Motor3_hiz_str;
+int Motor_yon_3 = random(0,2);
+int Motor_hiz_3 = random(1,255);  
+String Motor_yon_3_str;
+String Motor_hiz_3_str;
   
-Motor3_yon_str = String(Motor3_yon);
-Motor3_hiz_str = String(Motor3_hiz);
-if (Motor3_hiz <100){
-   Motor3_hiz_str = "0" + String(Motor3_hiz);
+Motor_yon_3_str = String(Motor_yon_3);
+Motor_hiz_3_str = String(Motor_hiz_3);
+if (Motor_hiz_3 <100){
+   Motor_hiz_3_str = "0" + String(Motor_hiz_3);
 }
-else if (Motor3_hiz <10){
-   Motor3_hiz_str = "00" +String(Motor3_hiz);
+else if (Motor_hiz_3 <10){
+   Motor_hiz_3_str = "00" +String(Motor_hiz_3);
 }
 
 //Motor 4
-int Motor4_yon = random(0,2);
-int Motor4_hiz = random(1,255);
-String Motor4_yon_str;
-String Motor4_hiz_str;
+int Motor_yon_4 = random(0,2);
+int Motor_hiz_4 = random(1,255);
+String Motor_yon_4_str;
+String Motor_hiz_4_str;
 
-Motor4_yon_str = String(Motor4_yon);
-Motor4_hiz_str = String(Motor4_hiz);
-if (Motor4_hiz <100){
-   Motor4_hiz_str = "0" + String(Motor4_hiz);
+Motor_yon_4_str = String(Motor_yon_4);
+Motor_hiz_4_str = String(Motor_hiz_4);
+if (Motor_hiz_4 <100){
+   Motor_hiz_4_str = "0" + String(Motor_hiz_4);
 }
-else if (Motor4_hiz <10){
-   Motor4_hiz_str = "00" +String(Motor4_hiz);
+else if (Motor_hiz_4 <10){
+   Motor_hiz_4_str = "00" +String(Motor_hiz_4);
 }
 
 
-Serial.println("S "+ Motor1_yon_str + Motor1_hiz_str +" "+ Motor2_yon_str + Motor2_hiz_str +" "+ Motor3_yon_str + Motor3_hiz_str +" "+ Motor4_yon_str + Motor4_hiz_str+ " F");
+Serial.println("S "+ Motor_yon_1_str + Motor_hiz_1_str +" "+ Motor_yon_2_str + Motor_hiz_2_str +" "+ Motor_yon_3_str + Motor_hiz_3_str +" "+ Motor_yon_4_str + Motor_hiz_4_str+ " F");
 Serial.print("");
 delay(1000);
 }
